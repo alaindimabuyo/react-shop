@@ -10,7 +10,6 @@ export default class ProductList extends Component {
   };
 
   render() {
-    console.log(this.state.products);
     return (
       <Fragment>
         <div className='py-5'>

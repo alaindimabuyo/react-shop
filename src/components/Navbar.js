@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Logo from "./../logo.svg";
+
 import { ButtonContainer } from "./Button";
 import styled from "styled-components";
 
@@ -9,13 +9,15 @@ export default class Navbar extends Component {
     return (
       <NavWrapper className='navbar navbar-expand-sm bg-info navbar-dark px-sm-5'>
         <Link to='/'>
-          <img src={Logo} alt='store' className='navbar-brand' />
+          <DivWrapper>
+            <i className='fab fa-phoenix-framework fa-10x navbar-brand' />
+          </DivWrapper>
         </Link>
 
         <ul className='navbar-nav align-items-center'>
           <li className='nav-item ml-5'>
             <Link to='/' className='nav-link'>
-              Products
+              <DivWrapper>Products</DivWrapper>
             </Link>
           </li>
         </ul>
@@ -35,5 +37,19 @@ const NavWrapper = styled.nav`
     color: var(--mainWhite) !important;
     font-size: 1.3rem;
     text-transform: capitalize;
+  }
+`;
+
+const DivWrapper = styled.div`
+  text-transform: capitalize;
+  font-size: 1em;
+  border: 0.5rem solid var(--darkBlue);
+
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    color: orange !important;
+  }
+  &:focus {
+    outline: none;
   }
 `;
