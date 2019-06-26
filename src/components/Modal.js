@@ -31,7 +31,7 @@ export default class Modal extends Component {
                         <ButtonContainer onClick={() => closeModal()}>Store</ButtonContainer>
                       </Link>{" "}
                       <Link to='/cart'>
-                        <ButtonContainer cart onClick={() => console.log(closeModal)}>
+                        <ButtonContainer cart onClick={() => closeModal()}>
                           Go to Cart
                         </ButtonContainer>
                       </Link>

@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Cart from "./components/Cart";
+import Cart from "./components/Cart/Cart";
 import Details from "./components/Details";
 import Navbar from "./components/Navbar";
 import ProductList from "./components/ProductList";
