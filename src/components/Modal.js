@@ -21,12 +21,14 @@ export default class Modal extends Component {
                   <div className='row'>
                     <div
                       id='modal'
-                      className='col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize p-5'
+                      className='col-10 mx-auto col-md-8 col-lg-6 text-center text-capitalize p-5'
                     >
-                      <h5>Item added to the cart</h5>
+                      <TitleContainer>
+                        <h3>Item added to the cart</h3>{" "}
+                      </TitleContainer>
                       <img src={img} alt='product' className='img-fluid' />
                       <h5>{title}</h5>
-                      <h5 className='text-muted'>Price: ${price}</h5>
+                      <h5 className='text-muted'>Price: ₱{price}</h5>
                       <Link to='/'>
                         <ButtonContainer onClick={() => closeModal()}>Store</ButtonContainer>
                       </Link>{" "}
@@ -46,7 +48,10 @@ export default class Modal extends Component {
     );
   }
 }
-
+const TitleContainer = styled.div`
+  color: green
+  font-family: "Lato", sans-serif !important;
+`;
 const ModalContainer = styled.div`
   position: fixed;
   top: 0;
