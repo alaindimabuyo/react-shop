@@ -6,7 +6,7 @@ React Shopping Cart
 
 ### Motivation
 
-I want to explore how to build shopping cart art in React
+I want to explore how to build shopping cart in React
 
 ### Built with
 
