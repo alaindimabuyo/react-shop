@@ -4,10 +4,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 React Shopping Cart
 
-### Motivation
-
-I want to explore how to build shopping cart in React
-
 ### Built with
 
 React <br>
